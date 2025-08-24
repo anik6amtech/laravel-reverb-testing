@@ -1,0 +1,14 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/dev/Dockerfile
+        container_name: saas-notification-management-app
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - "8292:8000"
+            - "6000:6000"
+        restart: unless-stopped
+
+
