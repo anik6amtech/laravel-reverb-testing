@@ -7,8 +7,8 @@ services:
         volumes:
             - ./:/var/www/html
         ports:
-            - "60001:8000"
-            - "6000:6000"
+            - "6000:8080"
+            - "6001:8000"
         restart: unless-stopped
 
 
