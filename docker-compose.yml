@@ -3,7 +3,7 @@ services:
         build:
             context: .
             dockerfile: .docker/dev/Dockerfile
-        container_name: saas-notification-management-app
+        container_name: saas-notification-management-app-alert-2
         volumes:
             - ./:/var/www/html
         ports:
